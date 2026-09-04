@@ -1,0 +1,12 @@
+# Web application
+streamlit
+
+# Data handling
+pandas
+numpy
+
+# Machine learning
+scikit-learn
+
+# Saved model loading
+joblib
