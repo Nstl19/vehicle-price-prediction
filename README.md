@@ -9,7 +9,7 @@ The application compares two regression models:
 
 ## Live Demo
 
-Live Application: <streamlit-app-url>
+Live Application: <https://vehicle-price-prediction-nstl.streamlit.app/>
 
 ## Project Notebook
 
