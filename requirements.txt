@@ -2,17 +2,14 @@
 streamlit
 
 # Data handling
-pandas
-numpy
+pandas==2.2.3
+numpy==2.2.4
 
 # Machine learning
-scikit-learn
+scikit-learn==1.6.1
 
 # Saved model loading
 joblib
 
-# Streamlit
-streamlit
-
-# Hugging Face Hub
+# Hugging Face model hosting
 huggingface-hub
