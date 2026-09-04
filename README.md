@@ -48,25 +48,27 @@ Additional features are engineered during preprocessing:
 - Age × Mileage
 - Power-to-Weight Ratio
 
-## Machine Learning Models
+## Models
 
-### Random Forest
+Two regression models were trained and evaluated:
 
-Random Forest is an ensemble regression model that combines predictions from multiple decision trees.
+- **Random Forest Regressor**
+- **Gradient Boosting Regressor**
 
-The trained model is stored in:
+The models were trained using the processed vehicle dataset and the
+feature engineering/preprocessing pipeline documented in the notebook.
 
-[models/random_forest.pkl](models/random_forest.pkl)
+The Gradient Boosting model is included directly in this repository:
 
-### Gradient Boosting
+`models/gradient_boosting.pkl`
 
-Gradient Boosting is an ensemble regression model that builds decision trees sequentially, with each tree attempting to improve upon the errors of the previous trees.
+The Random Forest model is hosted separately on Hugging Face because
+the trained model file exceeds GitHub's 100 MB file-size limit:
 
-The trained model is stored in:
+[Random Forest Model](https://huggingface.co/Nastel123/vehicle-price-random-forest/tree/main)
 
-[models/gradient_boosting.pkl](models/gradient_boosting.pkl)
-
-Both models use the same selected features and preprocessing pipeline.
+The Streamlit application automatically retrieves the Random Forest
+model when required.
 
 ## Model Evaluation
 
@@ -100,4 +102,6 @@ training the machine learning models.
 ### Data Sources
 
 - Original Dataset: [Kaggle – Used Cars Dataset (CarDekho)](https://www.kaggle.com/datasets/sukritchatterjee/used-cars-dataset-cardekho)
-- Processed Dataset: [cleaned_vehicle_data.csv](data/cleaned_vehicle_data.csv)
+The dataset was cleaned and transformed as part of this project.
+This included data cleaning, feature engineering, and preparation of
+the final features used for model training.

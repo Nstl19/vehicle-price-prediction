@@ -10,3 +10,9 @@ scikit-learn
 
 # Saved model loading
 joblib
+
+# Streamlit
+streamlit
+
+# Hugging Face Hub
+huggingface-hub
