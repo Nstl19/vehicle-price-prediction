@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
-import sklearn
-import numpy
 
 from app.frontend.ui import (
     apply_styles,
@@ -19,11 +17,6 @@ st.set_page_config(
     page_icon="🚗",
     layout="wide"
 )
-
-# Temporary Version Check
-st.write("scikit-learn:", sklearn.__version__)
-st.write("numpy:", numpy.__version__)
-st.write("pandas:", pd.__version__)
 
 # FRONTEND SETUP
 apply_styles()
